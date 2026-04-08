@@ -35,3 +35,9 @@ input, select, textarea {
 button {
     width: 100%;
 }
+
+.titulo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
