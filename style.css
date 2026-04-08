@@ -7,7 +7,16 @@ body {
 
 h1 {
     text-align: center;
-    
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formAdocao {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 
