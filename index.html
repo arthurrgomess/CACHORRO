@@ -1,113 +1,94 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Adoção - ONG</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário De Adoção</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+    </head>
+    
+    <body>
+        
+        <h1> -Formulário de Adoção- </h1>
+        <footer>
+        <p>Clique no Gif 🐕</p>
+        </footer>
+        <a href="https://adotar.com.br/adocao-de-animais/joinville-sc">
+        
+         <img id="boneco" src="assets/03ba9bb409798666aa56507dcaa62f8a.gif" alt="gif">
+        </a>
 
-    <div class="container">
-        <h2>Interesse em Adoção</h2>
-        <form id="formAdocao">
-            <div class="campo">
-                <label>Nome Completo:</label>
-                <input type="text" id="nome" required minlength="3">
-            </div>
+    <form id="formAdocao">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome"  placeholder="Digite seu nome completo...">
+        <br>
 
-            <div class="campo">
-                <label>Email:</label>
-                <input type="email" id="email" required>
-            </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite seu email...">
+        <br>
 
-            <div class="campo">
-                <label>Telefone:</label>
-                <input type="tel" id="telefone" required minlength="8">
-            </div>
+        <label for="telefone">Telefone:</label>
+        <input type="telefone" id="telefone" placeholder="Digite seu telefone...">
+        <br>
 
-            <div class="campo">
-                <label>CPF:</label>
-                <input type="text" id="cpf" required placeholder="00000000000">
-            </div>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="Digite seu CPF...">
+        <br>
 
-            <div class="campo">
-                <label>Idade:</label>
-                <input type="number" id="idade" required>
-            </div>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Digite sua idade...">
+        <br>
 
-            <div class="campo">
-                <label>Cidade:</label>
-                <input type="text" id="cidade" required>
-            </div>
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" placeholder="Informe sua cidade...">
+        <br>
 
-            <div class="campo">
-                <label>Tipo de Moradia:</label>
-                <select id="tipoMoradia" required onchange="ajustarCampos()">
-                    <option value="">Selecione...</option>
-                    <option value="casa">Casa</option>
-                    <option value="apartamento">Apartamento</option>
-                </select>
-            </div>
+        <label for="moradia">Moradia:</label>
+        <select name="moradia" id="moradia">
+            <option value="">Selecione</option>
+            <option value="casa">Casa</option>
+            <option value="apartamento">Apartamento</option>
+        </select>
+        <br>
 
-            <div id="campoApto" class="hidden">
-                <div class="campo">
-                    <label>O condomínio permite animais?</label>
-                    <select id="permiteAnimais">
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                </div>
-            </div>
+        <label for="quintal">Possui Quintal?</label>
+        <input type="radio" name="quintal" value="sim">Sim
+        <input type="radio" name="quintal" value="nao">Não
+        <br>
 
-            <div id="campoCasa" class="hidden">
-                <div class="campo">
-                    <label>O quintal é seguro/telado?</label>
-                    <select id="quintalSeguro">
-                        <option value="sim">Sim</option>
-                        <option value="nao">Não</option>
-                    </select>
-                </div>
-            </div>
+        <label for="pets">Já teve pets antes?</label>
+        <input type="radio" name="pets" value="sim">Sim
+        <input type="radio" name="pets" value="nao">Não
+        <br>
 
-            <div class="campo">
-                <label>Possui quintal?</label>
-                <select id="possuiQuintal" required>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-            </div>
+        <label for="tempo">Quantas horas o animal ficará sozinho por dia:</label>
+        <input type="number" id="tempo" placeholder="Informe um valor numérico...s">
+        <br>
 
-            <div class="campo">
-                <label>Já teve pet antes?</label>
-                <select id="jaTevePet" required>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-            </div>
 
-            <div class="campo">
-                <label>Quantas horas o animal ficará sozinho por dia?</label>
-                <input type="number" id="horasSozinho" required>
-            </div>
+        <label for="motivo">Motivo da adoção:</label><br>
+        <textarea id="motivo" name="motivo" rows="4" cols="40" placeholder="Explique por que deseja adotar..."></textarea>
+        <br>
 
-            <div class="campo">
-                <label>Motivo da adoção:</label>
-                <textarea id="motivo" required minlength="10"></textarea>
-            </div>
+        <label>
+            <input type="checkbox" id="termo">
+            Aceito o termo de responsabilidade
+        </label>
+        <br>
 
-            <div class="campo">
-                <label>
-                    <input type="checkbox" id="termo" required> Aceito o termo de responsabilidade
-                </label>
-            </div>
+        </select>
+        <br>
 
-            <button type="submit">Enviar Formulário</button>
-        </form>
+        <button type="submit">Enviar</button>
+    </form>
 
-        <div id="resultado" class="hidden"></div>
-    </div>
+    <div id="resultado"></div>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+
+
 </body>
+
 </html>

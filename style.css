@@ -1,68 +1,28 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    padding: 20px;
+    background-image: url(assets/Captura\ de\ tela\ 2026-04-08\ 081105.png); 
+
+    font-family: Arial;
 }
 
-.container {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
 
-h2 {
-    color: #2c3e50;
+h1 {
     text-align: center;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
+    
 }
 
-.campo {
-    margin-bottom: 15px;
+
+form {
+    width: 300px;
+    margin: auto;
 }
 
-label {
-    display: block;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #34495e;
-}
 
 input, select, textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
+    margin-bottom: 10px;
 }
+
 
 button {
     width: 100%;
-    padding: 12px;
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #219150;
-}
-
-.hidden {
-    display: none;
-}
-
-#resultado {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #e8f4fd;
-    border-left: 5px solid #3498db;
-    color: #2c3e50;
 }
